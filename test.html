@@ -12,51 +12,57 @@
   <script type="text/javascript" src="table_script.js"></script>
 </head>
 <body>
-	<table id="myTable" class="blueTable">
-<thead>
+<div id="wrapper">
+<table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
 <tr>
-<th>head1</th>
-<th>head2</th>
-<th>head3</th>
-<th>head4</th>
+<th>Name</th>
+<th>Country</th>
+<th>Age</th>
 </tr>
-</thead>
-<tfoot>
-<tr>
-<td colspan="4">
-<div class="links"><a href="#">&laquo;</a> <a class="active" href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">&raquo;</a></div>
-</td>
-</tr>
-</tfoot>
-<tbody>
-<tr>
-<td>cell1_1</td>
-<td>cell2_1</td>
-<td>cell3_1</td>
-<td>cell4_1</td>
-</tr>
-<tr>
-<td>cell1_2</td>
+
+<tr id="row1">
+<td id="name_row1">Ankit</td>
+<td id="country_row1">India</td>
+<td id="age_row1">20</td>
 <td>
-<p>dfsdf</p>
-<p>&nbsp;</p>
+<input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+<input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+<input type="button" value="Delete" class="delete" onclick="delete_row('1')">
 </td>
-<td>cell3_2</td>
-<td>cell4_2</td>
 </tr>
+
+<tr id="row2">
+<td id="name_row2">Shawn</td>
+<td id="country_row2">Canada</td>
+<td id="age_row2">26</td>
+<td>
+<input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+<input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
+<input type="button" value="Delete" class="delete" onclick="delete_row('2')">
+</td>
+</tr>
+
+<tr id="row3">
+<td id="name_row3">Rahul</td>
+<td id="country_row3">India</td>
+<td id="age_row3">19</td>
+<td>
+<input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
+<input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
+<input type="button" value="Delete" class="delete" onclick="delete_row('3')">
+</td>
+</tr>
+
 <tr>
-<td>cell1_3</td>
-<td>cell2_3</td>
-<td>cell3_3</td>
-<td>cell4_3</td>
+<td><input type="text" id="new_name"></td>
+<td><input type="text" id="new_country"></td>
+<td><input type="text" id="new_age"></td>
+<td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
 </tr>
-<tr>
-<td>cell1_4</td>
-<td>cell2_4</td>
-<td>cell3_4</td>
-<td>cell4_4</td>
-</tr>
-</tbody>
+
 </table>
-  </body>
+</div>
+
+</body>
+</html>
 </html>
