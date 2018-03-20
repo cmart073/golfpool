@@ -12,7 +12,9 @@
 </head>
 <body>
 
-  
+var userposition=location.href.indexOf("user=");
+var user=location.href.substring(userposition+5);
+document.getElementById("Welcome").innerHTML=" Hello, "+user;
 
 </body>
 </html>
